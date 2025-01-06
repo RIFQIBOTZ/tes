@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Informasi lengkap mengenai Praktik Kerja Lapangan (PKL) periode Juni 2025">
+    <meta name="author" content="SMK MA'ARIF NU TALANG">
+    <title>Informasi PKL Juni 2025 | SMK MA'ARIF NU TALANG</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        :root {
+            --primary: #1a237e;
+            --secondary: #303f9f;
+            --accent: #f50057;
+            --light: #f5f5f5;
+            --dark: #263238;
+            --success: #2e7d32;
+            --warning: #ff6f00;
+            --info: #0288d1;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            text-align: center;
+            padding: 4rem 1rem 6rem;
+            position: relative;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .nav-container {
+            background: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            padding: 0.5rem;
+        }
+
+        .nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-link {
+            color: var(--dark);
+            text-decoration: none;
+            padding: 0.7rem 1.2rem;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-link:hover {
+            background: var(--secondary);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: -2rem auto 2rem;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            position: relative;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+        }
+
+        .section-title {
+            color: var(--primary);
+            margin-bottom: 1.8rem;
+            font-size: 1.6rem;
+            position: relative;
+            padding-left: 2.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .section-title i {
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+        }
+
+        .info-list {
+            list-style-type: none;
+        }
+
+        .info-list li {
+            margin-bottom: 1.2rem;
+            padding-left: 2rem;
+            position: relative;
+        }
+
+        .info-list li::before {
+            content: "\f0c8";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            color: var(--secondary);
+            position: absolute;
+            left: 0;
+            font-size: 0.8rem;
+            top: 5px;
+        }
+
+        .important {
+            background: #fff5f5;
+            border-left: 4px solid var(--accent);
+            padding: 1.8rem;
+            margin: 1.8rem 0;
+            border-radius: 0 15px 15px 0;
+        }
+
+        .important h3 {
+            color: var(--accent);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .steps {
+            background: linear-gradient(145deg, #e3f2fd, #bbdefb);
+            padding: 1.8rem;
+            border-radius: 15px;
+            margin: 1.8rem 0;
+        }
+
+        .steps ol {
+            counter-reset: steps;
+            list-style: none;
+        }
+
+        .steps li {
+            counter-increment: steps;
+            margin-bottom: 1rem;
+            padding-left: 3rem;
+            position: relative;
+        }
+
+        .steps li::before {
+            content: counter(steps);
+            background: var(--secondary);
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, rgba(48, 63, 159, 0.15) 0%, rgba(48, 63, 159, 0) 100%);
+            padding: 0.3rem 0.8rem;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+
+        .badge {
+            background: var(--secondary);
+            color: white;
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin: 0.2rem;
+            font-weight: 500;
+        }
+
+        .copyright {
+            text-align: center;
+            padding: 2rem;
+            background: var(--dark);
+            color: white;
+            margin-top: 3rem;
+        }
+
+        .copyright p {
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .wave {
+            animation: wave 2s infinite;
+            display: inline-block;
+            transform-origin: 70% 70%;
+        }
+
+        @keyframes wave {
+            0% { transform: rotate(0deg); }
+            10% { transform: rotate(14deg); }
+            20% { transform: rotate(-8deg); }
+            30% { transform: rotate(14deg); }
+            40% { transform: rotate(-4deg); }
+            50% { transform: rotate(10deg); }
+            60% { transform: rotate(0deg); }
+            100% { transform: rotate(0deg); }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+                margin-top: -1rem;
+            }
+            
+            .nav {
+                gap: 0.8rem;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .nav-link {
+                padding: 0.5rem 1rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Enhanced Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .card {
+            animation: fadeInUp 0.6s ease-out;
+            animation-fill-mode: both;
+        }
+
+        .card:nth-child(1) { animation-delay: 0.2s; }
+        .card:nth-child(2) { animation-delay: 0.4s; }
+        .card:nth-child(3) { animation-delay: 0.6s; }
+        .card:nth-child(4) { animation-delay: 0.8s; }
+        .card:nth-child(5) { animation-delay: 1s; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1><i class="fas fa-graduation-cap"></i> Informasi PKL Juni 2025</h1>
+            <p>Program Praktik Kerja Lapangan SMK MA'ARIF NU TALANG</p>
+        </div>
+    </header>
+
+    <div class="nav-container">
+        <nav class="nav">
+            <a href="#periode" class="nav-link"><i class="fas fa-calendar-alt"></i> Periode</a>
+            <a href="#biaya" class="nav-link"><i class="fas fa-coins"></i> Biaya</a>
+            <a href="#ketentuan" class="nav-link"><i class="fas fa-tools"></i> Ketentuan</a>
+            <a href="#kehadiran" class="nav-link"><i class="fas fa-user-check"></i> Kehadiran</a>
+            <a href="#prosedur" class="nav-link"><i class="fas fa-clipboard-list"></i> Prosedur</a>
+        </nav>
+    </div>
+
+    <div class="container">
+        <section id="periode" class="card">
+            <h2 class="section-title"><i class="fas fa-calendar-alt"></i> Periode PKL</h2>
+            <ul class="info-list">
+                <li><span class="highlight">Masa PKL: 4 Bulan</span></li>
+                <li><span class="highlight">Periode: 15 Juni - 15 Oktober 2025</span></li>
+                <li>Persiapan dimulai 3 bulan sebelum keberangkatan</li>
+            </ul>
+        </section>
+
+        <section id="biaya" class="card">
+            <h2 class="section-title"><i class="fas fa-coins"></i> Biaya dan Pembayaran</h2>
+            <ul class="info-list">
+                <li>Total Biaya PKL: <span class="badge">Rp 300.000</span>
+                    <small>(termasuk biaya monitoring, bimbingan, dan bengkel)</small>
+                </li>
+                <li>Syarat pembuatan surat: Minimal <span class="badge">Rp 200.000</span> (70%)</li>
+                <li>Batas pelunasan: 7 hari sebelum keberangkatan PKL</li>
+                <li>Pembayaran dapat dilakukan di Bank atau transfer</li>
+            </ul>
+        </section>
+
+        <section id="ketentuan" class="card">
+            <h2 class="section-title"><i class="fas fa-tools"></i> Ketentuan Bengkel</h2>
+            <ul class="info-list">
+                <li>Minimal peserta per bengkel: <span class="badge">3 orang</span></li>
+                <li>Tidak diperbolehkan pindah tempat PKL tanpa alasan valid</li>
+                <li>Wajib mengikuti peraturan bengkel setempat</li>
+            </ul>
+
+            <div class="important">
+                <h3><i class="fas fa-exclamation-triangle"></i> Pengecualian Pindah Bengkel:</h3>
+                <ul class="info-list">
+                    <li>Owner bengkel pindah lokasi atau tutup</li>
+                    <li>Harus mengajukan pindah 1 bulan sebelum PKL</li>
+                    <li>Mendapat persetujuan dari koordinator PKL</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="kehadiran" class="card">
+            <h2 class="section-title"><i class="fas fa-user-check"></i> Kehadiran</h2>
+            <ul class="info-list">
+                <li>Batas Maximal ketidakhadiran (Alpa): <span class="badge">12 hari</span></li>
+                <li>Wajib mengisi jurnal harian PKL</li>
+                <li>Menjaga sikap dan etika profesional</li>
+                <li>Berpakaian rapi sesuai ketentuan</li>
+            </ul>
+        </section>
+
+        <section id="prosedur" class="card">
+            <h2 class="section-title"><i class="fas fa-clipboard-list"></i> Prosedur Surat PKL</h2>
+            <div class="steps">
+                <ol class="info-list">
+                    <li>Mencari dan mensurvei bengkel (catat alamat lengkap)</li>
+                    <li>Melakukan pembayaran minimal 70% dari total biaya</li>
+                    <li>Menyerahkan bukti pembayaran ke Pak Rio</li>
+                    <li>Mengajukan surat permohonan PKL (3 bulan sebelum)</li>
+                </ol>
+            </div>
+        </section>
+    </div>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.footer-container {
+    background: #1a237e;
+    color: white;
+    padding: 1.5rem 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, 
+        transparent 0%,
+        #00ff88 25%,
+        #00ffee 50%,
+        #00ff88 75%,
+        transparent 100%);
+    animation: shimmer 3s infinite linear;
+}
+
+@keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+.footer-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.neon-text {
+    color: #fff;
+    text-shadow: 0 0 5px #fff,
+                 0 0 10px #fff,
+                 0 0 20px #00ff88,
+                 0 0 30px #00ff88;
+    animation: neon 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon {
+    from {
+        text-shadow: 0 0 5px #fff,
+                     0 0 10px #fff,
+                     0 0 20px #00ff88,
+                     0 0 30px #00ff88;
+    }
+    to {
+        text-shadow: 0 0 2px #fff,
+                     0 0 5px #fff,
+                     0 0 10px #00ff88,
+                     0 0 20px #00ff88;
+    }
+}
+
+.retro-badge {
+    background: linear-gradient(45deg, #ff0055, #ff00aa);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.retro-badge::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        transparent,
+        rgba(255, 255, 255, 0.1),
+        transparent
+    );
+    transform: rotate(45deg);
+    animation: shine 3s infinite;
+}
+
+@keyframes shine {
+    0% { transform: translateX(-100%) rotate(45deg); }
+    100% { transform: translateX(100%) rotate(45deg); }
+}
+
+.creator-section {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    position: relative;
+}
+
+.creator-section::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 30px;
+    padding: 2px;
+    background: linear-gradient(45deg, #ff0055, #00ff88, #00ffee);
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.wave-emoji {
+    display: inline-block;
+    animation: wave 2.5s infinite;
+    transform-origin: 70% 70%;
+    font-size: 1.2rem;
+}
+
+@keyframes wave {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(14deg); }
+    20% { transform: rotate(-8deg); }
+    30% { transform: rotate(14deg); }
+    40% { transform: rotate(-4deg); }
+    50% { transform: rotate(10deg); }
+    60% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.pixel-art {
+    font-family: 'Courier New', monospace;
+    font-size: 0.8rem;
+    line-height: 1;
+    white-space: pre;
+    color: #00ff88;
+    margin: 0 0.5rem;
+}
+
+.copyright-text {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Matrix rain effect */
+.matrix-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    opacity: 0.1;
+}
+
+.matrix-column {
+    position: absolute;
+    top: 0;
+    font-family: 'Courier New', monospace;
+    font-size: 1rem;
+    line-height: 1;
+    color: #00ff88;
+    white-space: nowrap;
+    transform: translateY(-50%);
+    animation: matrix-rain 20s infinite linear;
+    text-shadow: 0 0 5px #00ff88;
+}
+
+@keyframes matrix-rain {
+    0% { transform: translateY(-50%); }
+    100% { transform: translateY(100vh); }
+}
+
+@media (max-width: 600px) {
+    .footer-content {
+        gap: 0.5rem;
+    }
+    .retro-badge {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.8rem;
+    }
+    .creator-section {
+        padding: 0.4rem 0.8rem;
+    }
+    .pixel-art {
+        display: none;
+    }
+}
+</style>
+</head>
+<body>
+
+<footer class="footer-container">
+    <!-- Matrix rain background -->
+    <div class="matrix-bg">
+        <div class="matrix-column" style="left: 10%; animation-delay: 0s;">01001</div>
+        <div class="matrix-column" style="left: 25%; animation-delay: -5s;">10110</div>
+        <div class="matrix-column" style="left: 40%; animation-delay: -10s;">11010</div>
+        <div class="matrix-column" style="left: 55%; animation-delay: -15s;">00101</div>
+        <div class="matrix-column" style="left: 70%; animation-delay: -7s;">10011</div>
+        <div class="matrix-column" style="left: 85%; animation-delay: -12s;">01101</div>
+    </div>
+
+    <div class="footer-content">
+        <div class="retro-badge">
+            <span class="wave-emoji">👋</span>
+            Est. 2025
+        </div>
+        
+        <div class="creator-section">
+            <span class="neon-text">Crafted with ❤️ by</span>
+            <div class="pixel-art">
+              >[_]
+              /|\
+            </div>
+            <span class="neon-text">Sodikurifqi</span>
+        </div>
+        
+        <div class="retro-badge">XI.TKR.3</div>
+        
+        <div class="copyright-text">
+            © SMK MA'ARIF NU TALANG
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
